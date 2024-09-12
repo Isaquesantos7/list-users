@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { IUser } from './interfaces/user/user';
+import { usersList } from './data/user-list';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'list-users';
+  protected user: IUser[] = usersList;
 }
