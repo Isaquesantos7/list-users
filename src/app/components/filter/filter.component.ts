@@ -9,11 +9,11 @@ export class FilterComponent {
   protected options = [
     {
       value: true,
-      viewValue: 'Sim'
+      viewValue: 'Ativo'
     },
     {
       value: false,
-      viewValue: 'Não'
+      viewValue: 'Inativo'
     }
   ]
 }
