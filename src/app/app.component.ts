@@ -8,5 +8,10 @@ import { usersList } from './data/user-list';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  protected user: IUser[] = usersList;
+  protected userSelected: IUser = {} as IUser;
+
+  public onUserSelected(user: IUser): void {
+    
+    this.userSelected = user;
+  }
 }
