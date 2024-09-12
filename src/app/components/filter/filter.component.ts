@@ -9,11 +9,9 @@ export class FilterComponent {
   protected options = [
     {
       value: true,
-      viewValue: 'Ativo'
     },
     {
       value: false,
-      viewValue: 'Inativo'
     }
   ]
 }

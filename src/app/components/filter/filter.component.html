@@ -24,7 +24,7 @@
             <mat-form-field>
                 <mat-label>Status</mat-label>
                 <mat-select>
-                    <mat-option [value]="i.value" *ngFor="let i of options">{{ i.viewValue }}</mat-option>
+                    <mat-option [value]="i.value" *ngFor="let i of options">{{ i.value | status}}</mat-option>
                 </mat-select>
             </mat-form-field>
         </div>
