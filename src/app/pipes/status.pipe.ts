@@ -12,6 +12,6 @@ export class StatusPipe implements PipeTransform {
             return 'Status indisponível ou inválido!';
         }
 
-        return status ? 'Disponível' : 'Invalído';
+        return status ? 'Ativo' : 'Inativo';
     }
 }
