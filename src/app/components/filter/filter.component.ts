@@ -6,12 +6,25 @@ import { Component } from '@angular/core';
   styleUrl: './filter.component.scss'
 })
 export class FilterComponent {
-  protected options = [
+  protected filterOptions = {
+    name: '',
+    startDate: undefined,
+    endDate: undefined,
+    status: undefined
+  };
+
+  protected statusList = [
     {
-      value: true,
+      description: 'Ativo',
+      value: true
     },
     {
-      value: false,
+      description: 'Inativo',
+      value: false
     }
   ]
+
+  public onFilter(): void {
+    console.log(this.filterOptions);
+  }
 }
