@@ -8,7 +8,7 @@
             <!--Conteúdo da div esquerda (80% de altura)-->
             <app-users-list 
                 (userSelected)="onUserSelected($event)"
-                [usersList]="users"
+                [usersList]="usersListFiltered"
             ></app-users-list>
         </div>
     </div>
